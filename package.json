@@ -1,0 +1,17 @@
+{
+  "name": "trabajo06",
+  "version": "1.0.0",
+  "description": "real-time chat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mauricio Landeros",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
