@@ -1,8 +1,15 @@
-var express = require('express');
+const express = require('express');
+const socket = require('socket.io');
+const port = 3000;
 
 var app = express();
-var server = app.listen(3000, function(){
+var server = app.listen(port, function(){
     console.log("Listening to request on port 3000");
 });
 
 app.use(express.static('public'));
+
+var io = socket(server);
+io.on('connection', function(socket){
+    console.log('Made socket connection');
+})
